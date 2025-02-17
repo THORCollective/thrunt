@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Thrunt</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            text-align: center;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>You've Found Thrunt</h1>
+    <p>What brings you here?</p>
+    <img src="/workspaces/thrunt/thor_sheep.png" alt="Easter Egg" id="easterEgg">
+    <p class="hidden-message" id="hiddenMessage">Welcome to the secret realm of Thrunt. Happy thrunting.</p>
+    
+    <script>
+        document.getElementById('easterEgg').addEventListener('click', function() {
+            document.getElementById('hiddenMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
